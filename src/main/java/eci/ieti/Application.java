@@ -51,6 +51,7 @@ public class Application implements CommandLineRunner {
         query.addCriteria(Criteria.where("firstName").is("Alice"));
 
         Customer customer = mongoOperation.findOne(query, Customer.class);
+        System.out.println(customer);
 
         customerRepository.deleteAll();
 
