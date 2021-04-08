@@ -59,11 +59,17 @@ Create a Spring Boot Application that connects with MongoDB.
 6. Run the project and verify that the connection to the database works properly. Answer the following questions:
 
 - How many customers were created in the database?
+  - 5
 - Where is the *findAll* method implemented?
+  - Este metodo esta implementado internamente en la base de datos por eso no es necesario implementarlo en la logica de la aplicacion
 - Suppose you have more than 1000 products in your database. How would you implement a method for supporting pagination and return pages of 50 products to your frontend?
+  - 
 - How many products contain the "plus" word in their description?
+  - 4
 - How many products are returned by the *findByDescriptionContaining* query? Why?
+  - 2 porque en la pagina solo hay 2 productos
 - Which are the collection names where the objects are stored? Where are those names assigned?
+- Product y customer y se asignan acorde al modelo que se creo en la logica de la aplicacion.
 
 5. Create two more models (User and Todo) with the following structure:
 
